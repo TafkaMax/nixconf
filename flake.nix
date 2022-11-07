@@ -8,7 +8,7 @@
 	
 	outputs = { nixpkgs, nixpkgs-unstable, ... }: {
 	    nixosConfigurations = {
-	      nixtst = nixpkgs.lib.nixosSystem {
+	      nixos_custom = nixpkgs.lib.nixosSystem {
 	        system = "x86_64-linux";
 	        modules = [
 	          ({ config, pkgs, ... }:
